@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 14</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='accueil.css') }}">
+</head>
+
+    <header>
+        <div class="logo">
+            <img src="/static/top14.png" alt="Top 14 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://lnr-static.sh-prd.fa.wetix-agency.fr/?destination=https%3A%2F%2Fbilletterie.lnr.fr%2Ffr" class="gold-text">BILLETERIE</a></li>
+                <li><a href="/prono"  class="gold-text">PRONOSTICS</a></li>
+                <li><a href="/stats" class="gold-text">STATISTIQUES</a></li>
+                <li><a href="/equipe"  class="gold-text">EQUIPES</a></li>
+                <li><a href="/construction" class="gold-text">MON COMPTE</a></li>
+                <li><a href="/DroitAcces" class="gold-text">GÉRER DROITS D'ACCÈS</a></li>
+            </ul>
+        </nav>
+        <a href="/inscription" class="connect-button move-right">SE CONNECTER</a>
+    </header>
+    <body>
+    <main>
+        <div class="main-content">
+            <h1>Découvrez nos équipes :</h1>
+            <aside class="teams-container">
+                <div class="teams">
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_clermont.png" alt="Clermont Logo">
+                        <h3>ASM Clermont</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_bayonne.svg" alt="Bayonne Logo">
+                        <h3>Aviron Bayonnais</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_castres.png" alt="Castres Logo">
+                        <h3>Castres Olympique</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_lyon.png" alt="Lyon Logo">
+                        <h3>Lyon LOU</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_montpellier.png" alt="Montpellier Logo">
+                        <h3>Montpellier HR</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_racing.png" alt="Racing Logo">
+                        <h3>Racing 92</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_toulon.png" alt="Toulon Logo">
+                        <h3>RC Toulon</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_vannes.png" alt="Vannes Logo">
+                        <h3>RC Vannes</h3>
+                    </div>
+                    <div class="team">
+                        <a href="/equipe" style="text-decoration: none; color: inherit;">
+                            <img src="/static/Logos_Equipes/logo_section.svg" alt="Section Logo">
+                            <h3>Section Paloise</h3>
+                        </a>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_stade_francais.png" alt="Stade Français Logo">
+                        <h3>Stade Français</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_stade_rochelais.png" alt="Stade Rochelais Logo">
+                        <h3>Stade Rochelais</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_stade_toulousain.svg" alt="Stade Toulousain Logo">
+                        <h3>Stade Toulousain</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_bordeaux.png" alt="Bordeaux Logo">
+                        <h3>Union Bordeaux-Bègles</h3>
+                    </div>
+                    <div class="team">
+                        <img src="/static/Logos_Equipes/logo_perpignan.svg" alt="Perpignan Logo">
+                        <h3>USA Perpignan</h3>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script type="text/javascript">
+        const teamsContainer = document.querySelector('.teams-container');
+
+        // Écouteur d'événement pour le défilement de la molette
+        teamsContainer.addEventListener('wheel', (event) => {
+            event.preventDefault(); // Empêche le comportement par défaut de la molette
+            teamsContainer.scrollLeft += event.deltaY; // Défilement horizontal basé sur le mouvement vertical de la molette
+        });
+    </script>
+    </body>
+    </html>

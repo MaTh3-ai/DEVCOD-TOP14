@@ -1,0 +1,156 @@
+.Titre {
+  margin-top: 1%;
+  margin-left: -30%!important;
+  margin-bottom: 3%; /* Ajouter une marge de 10% en bas */
+  color: #fff;
+}
+
+.xls {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #0F0F0F;
+  height: 30px;
+  margin-left: 5% !important; /* Modifier la marge gauche et prioriser ce script */
+  text-decoration: none;
+  color: inherit;
+}
+
+.xls a {
+  font-family: Fredoka, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+.xls {
+  margin-top: 0.1%;
+}
+
+.txt_titre {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  background-color: transparent;
+  width: 400px;
+  margin-left: 3%;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 20px;
+  background-color: #0F0F0F;
+  margin-left: 27%;
+  padding: 0;
+  display: flex; /* Utilisation de flexbox pour le positionnement */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: flex-start; /* Aligner les éléments en haut */
+  min-height: 50vh;
+  color: white;
+  flex-direction: column; /* Aligner les éléments verticalement */
+}
+
+/* Styles de base */
+.form_container {
+  background-color: rgba(255, 255, 255, 0.12);
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.15), inset 0 0 15px rgba(0, 0, 0, 0.3);
+  width: 600px; 
+  height: 200px; 
+  display: flex;
+  flex-direction: column; /* Aligner les éléments verticalement */
+  justify-content: space-between; /* Pour répartir les éléments verticalement */
+  align-items: left; /* Centrer horizontalement */
+  transition: box-shadow 0.3s, transform 0.3s; /* Transition */
+}
+
+/* Effet néomorphisme au survol */
+.form_container:hover {
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.6), 0 0 0 4px rgba(255, 255, 255, 0.15), inset 0 0 15px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px) scale(1.002); /* Légère translation et mise à l'échelle */
+}
+
+.form-group {
+  display: flex; /* Utilisation de flexbox pour aligner en ligne */
+  align-items: center; /* Centrer les items verticalement */
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-left: -4%;
+  font-size: 16px;
+  width: 30%; /* Définir une largeur pour les labels */
+  text-align: right; /* Aligner le texte du label à droite */
+}
+
+input[type='text'], .select_type {
+  width: 350px; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 5px; /* Agrandir la zone de clic en ajoutant un padding vertical */
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  background: url('static/Image_Dore.jpg') no-repeat center; /* Centrer l'image de fond */
+}
+
+/* Styles pour le bouton de soumission */
+input[type="submit"] {
+  background: url('static/Image_Dore.jpg') no-repeat center; /* Centrer l'image de fond */
+  background-size: cover; /* Ajuster la taille de l'image de fond */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  display: block; /* Pour centrer avec margin auto */
+  margin: 20px auto; /* Centrer horizontalement avec une marge automatique */
+}
+
+input[type="submit"]:hover {
+  background-color: black; /* Couleur de fond au survol */
+}
+.erreur_message {
+  font-size: 18px;
+  background-color: rgba(255,15,15, 0.9);
+  width: 270px; 
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-left: 14%;
+  box-sizing: border-box;
+}
+
+/* Styles pour les formes */
+.shape {
+  position: absolute;
+  z-index: -1;
+  width: 800px;
+  height: 350px;
+  background: linear-gradient(90deg, rgba(255, 215, 0, 1) 28%, rgba(255, 223, 186, 0.7) 55%, rgba(255, 215, 0, 1) 89%);
+  border-radius: 70%; /* Forme ronde */
+  transform: rotate(15deg); /* Rotation */
+  filter: blur(180px); /* Effet de flou */
+  top: 22%;
+  left: 25%;
+}

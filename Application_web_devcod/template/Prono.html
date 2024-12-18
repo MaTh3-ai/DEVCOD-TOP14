@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronostics</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='prono.css') }}">
+</head>
+<body>
+
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                <img src="/static/top14.png" alt="Top 14 Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://lnr-static.sh-prd.fa.wetix-agency.fr/?destination=https%3A%2F%2Fbilletterie.lnr.fr%2Ffr" class="gold-text">BILLETERIE</a></li>
+                    <li><a href="/prono"  class="gold-text">PRONOSTICS</a></li>
+                    <li><a href="/stats" class="gold-text">STATISTIQUES</a></li>
+                    <li><a href="/equipe"  class="gold-text">EQUIPES</a></li>
+                    <li><a href="/construction" class="gold-text">MON COMPTE</a></li>
+                    <li><a href="/DroitAcces" class="gold-text">GÉRER DROITS D'ACCÈS</a></li>
+                </ul>
+            </nav>
+            <a href="/inscription" class="connect-button move-right">SE CONNECTER</a>
+        </header>
+        <main>
+            <h1>Pronostics</h1>
+            <div class="match cadre">
+                <div class="team team-left">
+                    <img src="/static/Logos_Equipes/logo_toulon.png" alt="Logo Toulon">
+                    <p></p>
+                    <button>Toulon</button>
+                </div>
+                <div class="match-info">
+                    <p>23/11 à 14h30</p>
+                    <button>Match nul</button>
+                </div>
+                <div class="team team-right">
+                    <img src="/static/Logos_Equipes/logo_bayonne.svg" alt="Logo Bayonne">
+                    <p></p>
+                    <button>Bayonne</button>
+                </div>
+            </div>
+            <div class="match cadre">
+                <div class="team team-left">
+                    <img src="/static/Logos_Equipes/logo_montpellier.png" alt="Logo Montpellier">
+                    <p></p>
+                    <button>Montpellier</button>
+                </div>
+                <div class="match-info">
+                    <p>26/11 à 16h30</p>
+                    <button>Match nul</button>
+                </div>
+                <div class="team team-right">
+                    <img src="/static/Logos_Equipes/logo_section.svg" alt="Logo Section">
+                    <p></p>
+                    <button>Section Paloise</button>
+                </div>
+            </div>
+            <div class="match cadre">
+                <div class="team team-left">
+                    <img src="/static/Logos_Equipes/logo_stade_toulousain.svg" alt="Logo Toulouse">
+                    <p></p>
+                    <button>Toulouse</button>
+                </div>
+                <div class="match-info">
+                    <p>26/11 à 16h30</p>
+                    <button>Match nul</button>
+                </div>
+                <div class="team team-right">
+                    <img src="/static/Logos_Equipes/logo_perpignan.svg" alt="Logo Perpignan">
+                    <p></p>
+                    <button>Perpignan</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Top 14. Tous droits réservés.</p>
+        </footer>
+    
+        <!-- JavaScript intégré -->
+        <script>
+            document.querySelectorAll('.match button').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    // Réinitialise la couleur de tous les boutons
+                    document.querySelectorAll('.match button').forEach(btn => {
+                        btn.style.backgroundColor = ''; 
+                    });
+    
+                    // Change la couleur du bouton cliqué
+                    e.target.style.backgroundColor = 'rgb(255, 196, 0)';
+                });
+            });
+        </script>
+    </body>
+    </html>
+    

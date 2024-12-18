@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='inscription.css') }}">
+</head>
+<body>
+    <div class="shape"></div>
+
+    <div class="Titre">
+        <div class="xls">
+            <div class="xls">
+                <a href="/" style="text-decoration: none; color: inherit;">
+                    <img src="/static/top14.png" alt="Top 14 Logo" height="30px">
+                    </a>
+            </div>
+            <div class="txt_titre">
+                <p>Connexion à l'application</p>
+            </div>
+        </div>
+    </div>
+
+    {% if erreur %}
+    <p class="erreur_message">{{ erreur }}</p>
+    {% endif %}
+
+    <div class="form_container">
+        <form id="login_form" method="POST" action="/login">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            </div>
+
+            <div class="bouton_valid">
+                <input type="submit" value="Se connecter">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

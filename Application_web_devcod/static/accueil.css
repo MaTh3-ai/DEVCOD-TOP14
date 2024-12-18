@@ -1,0 +1,191 @@
+/* General Styling */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 1%;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gold-text {
+  font-size: 20px;
+  font-weight: bold;
+  background: url('/static/Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  position: relative; /* Position relative pour le texte */
+  z-index: 2; /* Mettre le texte au-dessus de l'image */
+}
+
+nav ul { 
+  display: flex; 
+  list-style-type: none; 
+  padding: 0; 
+} 
+
+nav ul li { 
+  margin-right: 20px;
+}
+
+nav ul li a {
+  font-size: 10px;
+  font-weight: bold;
+  background: url('/static/Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.connect-button {
+  font-size: 18px;
+  font-weight: bold;
+  background: url('/static/Image_Dore.jpg') no-repeat;
+  background-size: cover;
+  color: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-radius: 15px;
+}
+
+.move-right {
+  z-index: 3;
+  color: white; /* Keeps text legible */
+}
+
+.rectangle-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between rectangles */
+  margin-top: 20px;
+  justify-content: space-between; /* Evenly spaced */
+}
+
+.rectangle {
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Three per row */
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  height: 6em;
+  border-radius: 10px; /* Arrondir légèrement les bords de l'image */
+}
+
+header nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header button {
+  background-color: #f0b90b;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: scroll; /* Assurez-vous que le défilement vertical est activé */
+}
+
+/* Teams Container */
+.teams-container {
+  overflow-x: auto; /* Permet le défilement horizontal */
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  width: 100%; /* Prend toute la largeur */
+  height: 70vh; /* Hauteur du conteneur (70% de la hauteur de la fenêtre) */
+  scrollbar-width: thin; /* Pour Firefox : rend la barre de défilement plus fine */
+  scrollbar-color: #888 #f1f1f1; /* Pour Firefox : couleur de la barre de défilement */
+}
+
+.teams-container::-webkit-scrollbar {
+  height: 6em; /* Augmenter la hauteur de la barre de défilement (utilisation d'em) */
+}
+
+.teams-container::-webkit-scrollbar-thumb {
+  background: #888; /* Couleur de la barre de défilement */
+  border-radius: 10px; /* Coins arrondis de la barre de défilement */
+}
+
+.teams-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de l'arrière-plan de la barre de défilement */
+}
+
+/* Teams */
+.teams {
+  display: flex; /* Utilise flexbox pour aligner les équipes horizontalement */
+}
+
+.team {
+  display: flex; /* Utilise flexbox pour centrer le contenu */
+  flex-direction: column; /* Aligne le texte sous l'image */
+  padding: 3em;
+  padding-top: 8em;
+  align-items: center; /* Centre horizontalement */
+  margin: 0 4rem; /* Espacement entre les équipes (utilisation de rem) */
+  transition: transform 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+.team img {
+  width: auto; /* Laisse la largeur automatique pour conserver le ratio d'aspect */
+  height: 8rem; /* Hauteur fixe pour uniformiser l'affichage (utilisation de rem) */
+  max-width: 14rem; /* Augmenter la largeur maximale pour chaque logo (utilisation de rem) */
+  object-fit: contain; /* Conserve le ratio d'aspect sans déformation */
+}
+
+.team:hover {
+  transform: scale(1.1); /* Agrandit l'équipe au survol */
+  background-color: rgba(255, 255, 255, 0.2); /* Change la couleur de fond au survol */
+  border-radius: 10px; /* Coins arrondis au survol */
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

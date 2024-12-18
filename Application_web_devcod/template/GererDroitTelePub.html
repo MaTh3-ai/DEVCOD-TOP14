@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 14</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='GererDroitTelePub.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <img src="/static/top14.png" alt="Top 14 Logo">
+                </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="https://lnr-static.sh-prd.fa.wetix-agency.fr/?destination=https%3A%2F%2Fbilletterie.lnr.fr%2Ffr" class="gold-text">BILLETERIE</a></li>
+                <li><a href="/prono"  class="gold-text">PRONOSTICS</a></li>
+                <li><a href="/construction" class="gold-text">STATISTIQUES</a></li>
+                <li><a href="/equipe"  class="gold-text">EQUIPES</a></li>
+                <li><a href="/construction" class="gold-text">MON COMPTE</a></li>
+                <li><a href="/DroitAcces" class="gold-text">GÉRER DROITS D'ACCÈS</a></li>
+            </ul>
+        </nav>
+        <a href="/inscription" class="connect-button move-right">SE CONNECTER</a>
+    </header>
+    <main>
+        <h1 class="gold-text">Chiffres :</h1>
+        <div class="rectangle-container">
+            <div class="rectangle">Droit télé : Champions Cup : <br> <b> 65 000 € </b></div>
+            <div class="rectangle">Chiffre pub : <br> <b> 85 020 € </b></div>
+            <div class="rectangle">Gain TOP 14 : <br> <b> 500 000€ </b></div>
+            <div class="rectangle">Droit télé : TOP14 : <br> <b> 800 020 €</b></div>
+            <div class="rectangle">Revenus sponsors : <br> <b> 50 000 €</b></div>
+            <div class="rectangle">Publicité sur le terrain : <br> <b> 65 050 €</b></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Top 14. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
